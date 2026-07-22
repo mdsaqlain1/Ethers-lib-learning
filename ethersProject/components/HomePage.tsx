@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 // Import the hook instead of static variables
-import { useWallet, CF_CONTRACT_ADDRESS } from "../Provider.jsx";
+import { useWallet } from "../Provider.jsx";
 
 const HomePage = () => {
   // Destructure what you need from the context
-  const { address, cfContract, connectWallet, disconnectWallet } = useWallet();
+  const { address, connectWallet, disconnectWallet } = useWallet();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white">

@@ -17,7 +17,7 @@ type Campaign = {
 const AllCampaign = () => {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
-  const { address, cfContract, connectWallet } = useWallet();
+  const { cfContract } = useWallet();
 
   useEffect(() => {
     const fetchCampaigns = async () => {
